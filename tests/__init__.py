@@ -1,0 +1,3 @@
+"""
+FaultShield automated test suite.
+"""

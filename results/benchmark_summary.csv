@@ -1,0 +1,21 @@
+Scenario,Variant,Trials,Collision Rate (%),Recovery Rate (%),Goal Completion (%),Mean Duration (s),Mean Path Length (m),Stale Rejections Blocked,Stale Acceptance (%)
+exp1_healthy,Variant_A,2,0.0,100.0,0.0,30.0,8.74,0,0.0
+exp1_healthy,Variant_B,2,0.0,100.0,0.0,30.0,8.74,0,0.0
+exp1_healthy,Variant_C,2,0.0,100.0,0.0,30.0,8.74,0,0.0
+exp1_healthy,Variant_D,2,0.0,100.0,0.0,30.0,8.74,0,0.0
+exp2_frozen_lidar,Variant_A,2,0.0,100.0,0.0,30.0,4.34,0,0.0
+exp2_frozen_lidar,Variant_B,2,100.0,0.0,0.0,4.4,2.48,0,0.0
+exp2_frozen_lidar,Variant_C,2,0.0,100.0,0.0,30.0,1.06,0,0.0
+exp2_frozen_lidar,Variant_D,2,0.0,100.0,0.0,30.0,6.3,26,0.0
+exp3_contradictory_telemetry,Variant_A,2,0.0,100.0,0.0,30.0,1.2,0,0.0
+exp3_contradictory_telemetry,Variant_B,2,0.0,0.0,0.0,30.0,1.2,0,0.0
+exp3_contradictory_telemetry,Variant_C,2,0.0,100.0,0.0,30.0,0.48,0,0.0
+exp3_contradictory_telemetry,Variant_D,2,0.0,100.0,0.0,30.0,0.88,0,0.0
+exp4_delayed_ai,Variant_A,2,0.0,100.0,0.0,30.0,5.39,0,0.0
+exp4_delayed_ai,Variant_B,2,0.0,0.0,0.0,30.0,5.39,0,0.0
+exp4_delayed_ai,Variant_C,2,0.0,0.0,0.0,30.0,5.39,0,0.0
+exp4_delayed_ai,Variant_D,2,0.0,0.0,0.0,30.0,5.39,0,0.0
+exp5_compound_faults,Variant_A,2,0.0,100.0,0.0,30.0,4.89,0,0.0
+exp5_compound_faults,Variant_B,2,100.0,0.0,0.0,4.2,1.97,0,0.0
+exp5_compound_faults,Variant_C,2,0.0,100.0,0.0,30.0,0.72,0,0.0
+exp5_compound_faults,Variant_D,2,0.0,100.0,0.0,30.0,4.57,10,0.0
