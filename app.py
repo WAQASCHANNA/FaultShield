@@ -98,9 +98,19 @@ st.sidebar.info(f"**Description:** {selected_scenario.description}")
 st.sidebar.markdown("---")
 st.sidebar.subheader("2. Nebius Token Factory / Nemotron")
 
+def _get_default_nebius_key() -> str:
+    env_key = os.environ.get("NEBIUS_API_KEY", "").strip()
+    if env_key:
+        return env_key
+    try:
+        return str(st.secrets.get("NEBIUS_API_KEY", "")).strip()
+    except Exception:
+        return ""
+
+
 nebius_api_key = st.sidebar.text_input(
     "Nebius Token Factory API Key",
-    value=os.environ.get("NEBIUS_API_KEY", ""),
+    value=_get_default_nebius_key(),
     type="password",
     help="Enter your Token Factory API key or promotional grant. If empty, high-fidelity local mock policy is used.",
 )
